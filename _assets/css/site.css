@@ -34,6 +34,14 @@
 }
 
 /** menu **/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0px 15px 15px rgb(0 30 37 / 50%);
+}
+
 .navbar .container-fluid {
   max-width: 1500px;
 }
@@ -71,6 +79,7 @@
   background-size: cover;
   background-position: center;
   height: 600px;
+  margin-top: 100px;
 }
 
 /** join us section **/
