@@ -42,8 +42,13 @@
   box-shadow: 0px 15px 15px rgb(0 30 37 / 50%);
 }
 
-.navbar .container-fluid {
-  max-width: 1500px;
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .navbar a.active,
@@ -84,7 +89,7 @@
 
 /** join us section **/
 #join-us-section {
-  padding: 100px 0px;
+  padding: 110px 0px;
 }
 
 /** our offices section **/
@@ -123,13 +128,13 @@
   margin-top: 25px;
   border-radius: 15px;
   min-height: 80px;
-  padding: 20px;
+  padding: 15px 7px;
 }
 
 #open-positions-section .job-title-abbr {
   background: #101010;
   color: #fff;
-  padding: 15px;
+  padding: 10px 5px;
   font-size: 30px;
   border-radius: 8px;
   text-align: center;
@@ -156,15 +161,56 @@
 
 #open-positions-section .job-apply {
   background: #fff;
+  border: solid 1px #fff;
   color: #000;
   text-decoration: none;
-  display: block;
-  max-width: 200px;
-  padding: 20px;
+  display: inline-block;
+  padding: 17px 45px;
   border-radius: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
+}
+
+#open-positions-section .job-apply:hover {
+  color: #fff;
+  background: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+  #open-positions-section .job-apply {
+    padding: 12px 30px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #open-positions-section .job-title {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #open-positions-section .job-apply {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  #open-positions-section .job-position img {
+    max-width: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #open-positions-section .job-apply {
+    padding: 8px 10px;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  #open-positions-section .job-position .text-right {
+    text-align: center;
+  }
 }
 
 /** footer **/
@@ -188,14 +234,14 @@
 
 #footer .footer-link {
   display: block;
-  color: #fff;
+  color: #cbd0d2;
   font-size: 20px;
   margin-bottom: 25px;
   text-decoration: none;
 }
 
 #footer .small {
-  color: #fff;
+  color: #cbd0d2;
   text-decoration: none;
 }
 
