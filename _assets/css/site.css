@@ -1,7 +1,11 @@
 /** general **/
 * {
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid {
+  max-width: 1800px;
 }
 
 .green-dark-bg {
@@ -9,15 +13,15 @@
 }
 
 .green-bg {
-  background-color: rgb(169 207 45);
+  background-color: #a9cf2d;
 }
 
 .gray-bg {
-  background-color: rgb(226 226 224);
+  background-color: #e2e2e0;
 }
 
 .green {
-  color: rgb(169 207 45) !important;
+  color: #a9cf2d !important;
 }
 
 .underline {
@@ -33,6 +37,81 @@
   display: block;
 }
 
+.small,
+small {
+  font-size: 12px;
+}
+
+.regular {
+  font-weight: 400 !important;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.light {
+  font-weight: 300 !important;
+}
+
+p.bold,
+span.bold {
+  font-size: 24px;
+}
+
+p.light,
+span.light {
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 45px;
+    font-weight: 400;
+  }
+
+  p.light,
+  span.light {
+    font-size: 15px;
+  }
+  p.bold,
+  span.bold {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1,
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  p.light,
+  span.light {
+    font-size: 13px;
+  }
+  p.bold,
+  span.bold {
+    font-size: 16px;
+  }
+}
+
 /** menu **/
 .navbar {
   position: fixed;
@@ -40,6 +119,7 @@
   width: 100%;
   z-index: 2;
   box-shadow: 0px 15px 15px rgb(0 30 37 / 50%);
+  min-height: 130px;
 }
 
 .navbar-toggler-icon {
@@ -51,22 +131,31 @@
   box-shadow: none;
 }
 
-.navbar a.active,
-.navbar a:hover {
-  border-bottom: solid 2px rgb(169 207 45);
+.navbar-collapse a.active,
+.navbar-collapse a:hover {
+  border-bottom: solid 5px #a9cf2d;
 }
 
 .navbar-nav .nav-link {
-  color: #708184;
+  color: #fff;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   margin-right: 25px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1360px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  .navbar-nav .nav-link {
+  .navbar-expand-lg .navbar-nav .nav-link {
     margin-right: 15px;
-    font-size: 0.8rem;
+    font-size: 0.81rem;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
   }
 }
 
@@ -74,17 +163,32 @@
   .navbar-nav .nav-link {
     display: inline-block;
   }
+  .navbar-toggler {
+    border: solid 2px #a9cf2d;
+    border-radius: 50px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    min-height: inherit;
+  }
+  .navbar-toggler {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #main-section {
+    padding-top: 80px;
+  }
 }
 
 /** main section **/
 #main-section {
   background-color: #001e25;
-  background-image: url("../images/main-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 /** join us section **/
@@ -92,36 +196,134 @@
   padding: 110px 0px;
 }
 
+@media screen and (max-width: 768px) {
+  #join-us-section {
+    padding: 30px 0px;
+  }
+}
+
 /** our offices section **/
 #our-offices-section {
-  padding: 150px 0px;
+  padding: 80px 0px;
   padding-bottom: 0px;
-  margin-top: 80px;
+  margin-top: 100px;
+  height: 800px;
 }
 
-#our-offices-section h1 {
-  font-size: 90px;
+#our-offices-section img {
+  margin-top: -180px;
+  margin-left: -30px;
 }
 
-#our-offices-section-img1 {
-  margin-top: -250px;
-  margin-left: -50px;
+#our-offices-section img.dots-img {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  margin-top: -230px;
 }
 
-#our-offices-section-img2 {
-  float: right;
-  margin-right: 220px;
+@media screen and (max-width: 1400px) {
+  #our-offices-section {
+    padding: 40px 0px;
+    margin-top: 50px;
+    height: 680px;
+  }
+  #our-offices-section h1 {
+    font-size: 50px;
+  }
+  #our-offices-section img {
+    margin-top: -130px;
+    max-width: 1200px;
+  }
+  #our-offices-section img.dots-img {
+    margin-top: -180px;
+    max-width: 180px;
+  }
 }
 
-#our-offices-section-img3 {
-  margin-left: -200px;
-  margin-bottom: -100px;
+@media screen and (max-width: 1200px) {
+  #our-offices-section {
+    margin-top: 30px;
+    height: 570px;
+  }
+  #our-offices-section h1 {
+    font-size: 40px;
+  }
+  #our-offices-section img {
+    margin-top: -100px;
+    max-width: 992px;
+  }
+  #our-offices-section img.dots-img {
+    margin-top: -160px;
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #our-offices-section {
+    margin-top: 0px;
+    height: 420px;
+  }
+  #our-offices-section h1 {
+    font-size: 30px;
+  }
+  #our-offices-section img {
+    max-width: 750px;
+  }
+  #our-offices-section img.dots-img {
+    margin-top: -125px;
+    max-width: 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #our-offices-section {
+    margin-top: 50px;
+    height: 270px;
+  }
+  #our-offices-section h1 {
+    font-size: 20px;
+  }
+  #our-offices-section img {
+    max-width: 540px;
+    margin-left: 0px;
+  }
+  #our-offices-section img.dots-img {
+    margin-top: -95px;
+    max-width: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #our-offices-section {
+    margin-top: 30px;
+    height: 170px;
+    padding: 20px 0px;
+  }
+  #our-offices-section h1 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  #our-offices-section img {
+    max-width: 350px;
+    margin-top: -60px;
+  }
+  #our-offices-section img.dots-img {
+    margin-top: -65px;
+    max-width: 50px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #our-offices-section img {
+    display: none;
+  }
 }
 
 /** open positions section **/
 #open-positions-section {
   padding: 100px 0px;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 
 #open-positions-section .job-position {
@@ -134,27 +336,23 @@
 #open-positions-section .job-title-abbr {
   background: #101010;
   color: #fff;
-  padding: 10px 5px;
-  font-size: 30px;
+  padding: 15px;
   border-radius: 8px;
   text-align: center;
   box-sizing: border-box;
-  max-width: 75px;
-  max-height: 75px;
+  max-width: 59px;
+  max-height: 59px;
   display: block;
   text-transform: uppercase;
+  font-size: 21px;
 }
 
 #open-positions-section .job-title {
-  font-weight: 700;
-  font-size: 22px;
-  margin-top: 20px;
+  margin-top: 13px;
   display: block;
 }
 
 #open-positions-section .job-title-type {
-  font-weight: 300;
-  font-size: 22px;
   margin-top: 20px;
   display: block;
 }
@@ -164,12 +362,10 @@
   border: solid 1px #fff;
   color: #000;
   text-decoration: none;
-  display: inline-block;
-  padding: 17px 45px;
+  padding: 15px 36px;
   border-radius: 50px;
   text-align: center;
-  font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #open-positions-section .job-apply:hover {
@@ -185,23 +381,40 @@
 }
 
 @media screen and (max-width: 992px) {
+  #open-positions-section {
+    padding: 50px 0px;
+  }
+
+  #open-positions-section .job-title-type {
+    margin-top: 0px;
+  }
+
   #open-positions-section .job-title {
     margin-top: 0px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #open-positions-section {
+    margin-top: 100px;
+  }
+
   #open-positions-section .job-apply {
     padding: 8px 10px;
     font-size: 12px;
   }
-
-  #open-positions-section .job-position img {
-    max-width: 30px;
-  }
 }
 
 @media screen and (max-width: 576px) {
+  #open-positions-section .job-position {
+    margin: 0px;
+    margin-top: 25px;
+  }
+
+  #open-positions-section {
+    margin-top: 70px;
+  }
+
   #open-positions-section .job-apply {
     padding: 8px 10px;
     font-size: 12px;
@@ -217,36 +430,43 @@
 #footer {
   padding-top: 80px;
   padding-bottom: 20px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
-#footer h1 {
+#footer h2 {
   color: #fff;
   max-width: 500px;
+  margin-top: 20px;
 }
 
 #footer .footer-link-header {
   display: block;
-  color: #56666d;
+  color: #92989f;
   font-size: 20px;
   margin-bottom: 25px;
 }
 
 #footer .footer-link {
   display: block;
-  color: #cbd0d2;
+  color: #fff;
   font-size: 20px;
   margin-bottom: 25px;
   text-decoration: none;
 }
 
 #footer .small {
-  color: #cbd0d2;
+  color: #fff;
   text-decoration: none;
 }
 
 #footer hr {
-  background-color: #708184;
+  background-color: #fff;
   opacity: 1;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  #footer {
+    margin-top: 40px;
+  }
 }
