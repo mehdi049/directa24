@@ -75,6 +75,10 @@ small {
   border: none;
 }
 
+.btn-green img {
+  margin: initial !important;
+}
+
 .btn-green-lg {
   background: #a9cf2d;
   text-align: center;
@@ -126,12 +130,13 @@ small {
   border: none;
 }
 
-.btn-green img {
-  margin: initial !important;
+.btn-green:hover,
+.btn-green-lg:hover {
+  color: #001e25;
 }
 
-.btn-green:hover {
-  color: #001e25;
+.btn-black:hover {
+  color: #fff;
 }
 
 .not-nav-list {
@@ -220,6 +225,11 @@ form input[type="file"] {
   border: solid 1px #a9cf2d;
   outline: 0;
   box-shadow: none;
+}
+
+form {
+  padding: 40px;
+  border-radius: 15px;
 }
 
 form button {
