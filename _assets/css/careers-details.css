@@ -12,3 +12,9 @@
   padding: 40px;
   border-radius: 15px;
 }
+
+@media screen and (max-width: 576px) {
+  #job-requirement {
+    padding-top: 150px;
+  }
+}
