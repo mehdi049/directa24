@@ -5,8 +5,9 @@
   background-position: bottom center;
   background-size: cover;
   background-color: #001e25;
-  height: 100vh;
-  padding-top: 180px;
+  min-height: 100vh;
+  padding-top: 200px;
+  position: relative;
 }
 
 #solutions-page #top-section p {
@@ -22,7 +23,34 @@
   text-align: center;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
+  #solutions-page #top-section {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #solutions-page #top-section {
+    padding-top: 150px;
+  }
+
+  #solutions-page #top-section p {
+    max-width: inherit;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  #solutions-page #top-section {
+    min-height: 600px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 768px) {
+  #solutions-page #top-section {
+    min-height: 100vh;
+    padding-bottom: 200px;
+  }
 }
 
 /** accept payment **/
@@ -39,6 +67,33 @@
 
 #solutions-page #accept-payment img {
   margin-left: -50px;
+}
+
+@media screen and (max-width: 992px) {
+  #solutions-page #accept-payment {
+    background-position: bottom left;
+    background-size: 150px;
+  }
+  #solutions-page #accept-payment h2 {
+    margin-top: 0px;
+  }
+  #solutions-page #accept-payment img {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #solutions-page #accept-payment {
+    padding-bottom: 170px;
+    padding-top: 50px;
+  }
+  #solutions-page #accept-payment h2 {
+    margin-top: 20px;
+  }
+  #solutions-page #accept-payment img {
+    margin-left: 0px;
+  }
 }
 
 /** key feature **/
@@ -67,6 +122,20 @@
   min-height: 66px;
 }
 
+@media screen and (max-width: 768px) {
+  #solutions-page #key-features .key-feature {
+    min-height: 295px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #solutions-page #key-features .key-feature {
+    min-height: auto;
+    margin-top: 20px;
+  }
+}
+
 /** payment methods **/
 #solutions-page #payment-methods {
   padding: 300px 0px 50px;
@@ -76,6 +145,52 @@
 #solutions-page #payment-methods h1 {
   max-width: 700px;
   margin: auto;
+}
+
+#solutions-page #payment-methods .jcarousel {
+  margin-top: 100px;
+  position: relative;
+}
+
+#solutions-page #payment-methods .jcarousel div {
+  overflow: hidden;
+}
+
+#solutions-page #payment-methods .jcarousel ul {
+  position: relative;
+  width: 9999px;
+  height: 120px;
+  padding: 0px;
+}
+
+#solutions-page #payment-methods .jcarousel li {
+  float: left;
+  height: 120px;
+  overflow: hidden;
+}
+
+#solutions-page #payment-methods .scroll-btn-left,
+#solutions-page #payment-methods .scroll-btn-right {
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 2;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #solutions-page #payment-methods h1 img {
+    max-width: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #solutions-page #payment-methods h1 img {
+    max-width: 40px;
+  }
 }
 
 /** our product **/
@@ -92,12 +207,40 @@
   margin-top: 200px;
 }
 
+@media screen and (max-width: 1200px) {
+  #solutions-page #our-product {
+    background-position: 150% 0%, left bottom;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #solutions-page #our-product {
+    background-image: url("../images/dots-bg.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: right bottom;
+    min-height: auto;
+    padding-bottom: 100px;
+  }
+
+  #solutions-page #our-product h1 {
+    margin-top: 0px;
+  }
+}
+
 /** we are hiring **/
 #solutions-page #we-are-hiring {
   margin-top: 80px;
   padding: 80px 0px;
   background-color: #a9cf2d;
   background-image: url("../images/solution-we-are-hiring-bg.png");
+}
+
+@media screen and (max-width: 992px) {
+  #solutions-page #we-are-hiring {
+    padding: 60px 0px;
+    margin-top: -50px;
+  }
 }
 
 /** latest news **/
@@ -134,6 +277,30 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 992px) {
+  #solutions-page #latest-news {
+    padding: 80px 0px;
+  }
+  #solutions-page #latest-news .container {
+    background: none;
+  }
+  #solutions-page #latest-news .latest-news-item .latest-news-text-container p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #solutions-page #latest-news {
+    padding: 60px 0px 20px;
+  }
+  #solutions-page #latest-news .container {
+    background: none;
+  }
+  #solutions-page #latest-news .latest-news-item .latest-news-text-container p {
+    min-height: auto;
+  }
+}
+
 /** emerging markets  */
 #solutions-page #emerging-markets {
   background-color: #001e25;
@@ -153,6 +320,21 @@
   width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  #solutions-page #emerging-markets {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #solutions-page #emerging-markets {
+    padding: 50px 0px;
+  }
+  #solutions-page #emerging-markets p {
+    bottom: 50px;
+  }
+}
+
 /** integrate with directa24  */
 #integrate-with-directa24 {
   padding-top: 100px;
@@ -162,4 +344,10 @@
   margin-top: 20px;
   max-width: 600px;
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #integrate-with-directa24 {
+    padding-top: 50px;
+  }
 }

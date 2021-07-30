@@ -23,6 +23,7 @@
       media="all"
       onload="this.media='all'; this.onload = null"
     />
+
     <link rel="stylesheet" href="_assets/css/main.css" as="style" />
     <link rel="stylesheet" href="_assets/css/solutions.css" as="style" />
     <title>Directa24</title>
@@ -80,12 +81,12 @@
       <div id="top-section">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <h1 class="green">
                 The fastest growing payment solution in emerging markets
               </h1>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <p class="light white">
                 Reach emerging markets in the easiest way possible and start
                 boosting your business with Directa24. We offer a wide range of
@@ -98,7 +99,10 @@
         </div>
 
         <a href="#"
-          ><img src="_assets/images/icon-arrow-bottom.png" alt=""
+          ><img
+            src="_assets/images/icon-arrow-bottom.png"
+            class="scroll-link"
+            alt=""
         /></a>
       </div>
 
@@ -106,7 +110,7 @@
       <div id="accept-payment">
         <div class="container">
           <div class="row">
-            <div class="col-5">
+            <div class="order-2 order-sm-1 col-sm-6 col-lg-5">
               <h2>
                 Accept payments <span class="green"> local currency</span>
               </h2>
@@ -121,7 +125,7 @@
                 <img src="_assets/images/icon-arrow-right-black.png" alt=""
               /></a>
             </div>
-            <div class="col-7">
+            <div class="order-1 order-sm-2 col-sm-6 col-lg-7">
               <img
                 src="_assets/images/solution-img1.png"
                 alt=""
@@ -217,13 +221,80 @@
             </div>
           </div>
         </div>
+
+        <div class="jcarousel">
+          <div>
+            <ul>
+              <li>
+                <img src="_assets/images/solution-payment-img1.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img2.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img3.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img4.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img5.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img6.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img7.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img8.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img9.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img10.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img11.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img12.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img13.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img14.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img15.png" alt="" />
+              </li>
+              <li>
+                <img src="_assets/images/solution-payment-img16.png" alt="" />
+              </li>
+            </ul>
+          </div>
+          <br />
+          <div class="text-center">
+            <a class="scroll-btn-left" href="javascript:void(0);"></a>
+            <a class="scroll-btn-right" href="javascript:void(0);"></a>
+          </div>
+        </div>
       </div>
 
       <!-- our product -->
       <div id="our-product">
         <div class="container">
           <div class="row">
-            <div class="col-5">
+            <div class="d-block d-lg-none">
+              <img
+                src="_assets/images/solution-img2.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-lg-5">
               <h1 class="regular">
                 Know <span class="green">our product</span>
                 <ul class="not-nav-list">
@@ -252,13 +323,13 @@
       <div id="we-are-hiring">
         <div class="container">
           <div class="row">
-            <div class="col-7">
+            <div class="col-12 col-lg-7">
               <h1 class="regular">
                 <span class="white">We're hiring!</span> <br />
                 Start working with us.
               </h1>
             </div>
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
               <a href="#" class="btn-black"
                 >Join our Team &nbsp;
                 <img src="_assets/images/icon-arrow-right-white.png" alt=""
@@ -415,7 +486,7 @@
                 to integrate with Directa24
               </p>
               <br />
-              <a href="#" class="btn-green"
+              <a href="#" class="btn-green-lg"
                 >Directa 24 API Reference &nbsp;
                 <img src="_assets/images/icon-arrow-right-black.png" alt=""
               /></a>
@@ -484,5 +555,8 @@
       rel="preload"
       as="script"
     ></script>
+    <script src="_assets/js/jquery-3.6.0.min.js"></script>
+    <script src="_assets/js/jquery.jcarousel-core.min.js"></script>
+    <script src="_assets/js/script.js"></script>
   </body>
 </html>

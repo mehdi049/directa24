@@ -74,6 +74,22 @@ small {
   box-sizing: border-box;
 }
 
+.btn-green-lg {
+  background: #a9cf2d;
+  text-align: center;
+  text-decoration: none;
+  color: #001e25;
+  padding: 25px 0px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  width: 350px;
+  height: 70px;
+  margin-top: 25px;
+  box-sizing: border-box;
+}
+
 .btn-black {
   background: #001e25;
   text-align: center;
@@ -150,8 +166,27 @@ h2 {
     font-size: 20px;
   }
 
-  .btn-green {
+  .btn-green,
+  .btn-green-lg,
+  .btn-black {
     font-size: 15px;
+    width: 200px;
+    height: 50px;
+    padding: 15px 0px;
+  }
+
+  .btn-green-lg {
+    width: 250px;
+  }
+
+  .btn-green img,
+  .btn-green-lg img,
+  .btn-black img {
+    width: 17px;
+  }
+
+  .scroll-link {
+    max-width: 150px;
   }
 }
 
@@ -173,8 +208,23 @@ h2 {
     font-size: 16px;
   }
 
-  .btn-green {
+  .btn-green,
+  .btn-green-lg,
+  .btn-black {
     font-size: 13px;
+    width: 180px;
+    height: 42px;
+    padding: 12px 0px;
+  }
+
+  .btn-green-lg {
+    width: 220px;
+  }
+
+  .btn-green img,
+  .btn-green-lg img,
+  .btn-black img {
+    width: 15px;
   }
 }
 
@@ -242,6 +292,9 @@ h2 {
   }
   .navbar-toggler {
     padding: 15px;
+  }
+  .navbar-brand img {
+    max-width: 150px;
   }
 }
 
