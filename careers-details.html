@@ -251,6 +251,41 @@
       </div>
     </main>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="success-modal"
+      tabindex="-1"
+      aria-labelledby="success-modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <br />
+            <img
+              src="_assets/images/icon-check-green2.png"
+              alt=""
+              class="img-fluid d-inline-block"
+            />
+            <br />
+            <br />
+            <p class="bold">Success!</p>
+            <p class="light">Your details haven been sent successfully.</p>
+
+            <button
+              class="white-btn-sm"
+              data-bs-target="#success-modal"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+            >
+              Okay!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
     <div id="footer" class="green-dark-bg">
       <div class="container">
@@ -310,5 +345,12 @@
       rel="preload"
       as="script"
     ></script>
+
+    <script>
+      var myModal = new bootstrap.Modal(
+        document.getElementById("success-modal")
+      );
+      myModal.show();
+    </script>
   </body>
 </html>
