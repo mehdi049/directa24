@@ -72,6 +72,7 @@ small {
   height: 70px;
   margin-top: 25px;
   box-sizing: border-box;
+  border: none;
 }
 
 .btn-green-lg {
@@ -88,6 +89,7 @@ small {
   height: 70px;
   margin-top: 25px;
   box-sizing: border-box;
+  border: none;
 }
 
 .btn-black {
@@ -104,6 +106,7 @@ small {
   height: 70px;
   margin-top: 25px;
   box-sizing: border-box;
+  border: none;
 }
 
 .btn-green img {
@@ -120,6 +123,21 @@ small {
 
 .not-nav-list li {
   margin-top: 25px;
+}
+
+.black-check-list {
+  list-style-image: url("../images/icon-check-black.png");
+  padding-left: 35px;
+}
+
+.green-check-list {
+  list-style-image: url("../images/icon-check-green.png");
+  padding-left: 35px;
+}
+
+.green-check-list li,
+.black-check-list li {
+  padding-left: 10px;
 }
 
 p.bold,
@@ -146,6 +164,32 @@ h1 {
 h2 {
   font-size: 48px;
   font-weight: 400;
+}
+
+form label {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+form .form-control {
+  border-radius: 10px;
+  border: solid 1px rgba(0, 3, 37, 0.5);
+  padding: 10px;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border: solid 1px #a9cf2d;
+  outline: 0;
+  box-shadow: none;
+}
+
+form button {
+  margin: auto;
+  display: block !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -195,6 +239,10 @@ h2 {
   h2 {
     font-size: 30px;
     font-weight: 400;
+  }
+
+  .text-left-xs {
+    text-align: left !important;
   }
 
   li.light,

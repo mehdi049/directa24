@@ -1,0 +1,14 @@
+#job-requirement {
+  padding-top: 200px;
+}
+
+#job-description-content {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+#job-requirement form {
+  padding: 40px;
+  border-radius: 15px;
+}
