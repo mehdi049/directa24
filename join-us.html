@@ -50,42 +50,48 @@
                 src="_assets/images/step-form-img1-active.png"
                 alt=""
                 class="img-fluid"
+                id="step-form-img1-active"
               />
               <img
                 src="_assets/images/step-form-img1-inactive.png"
                 alt=""
                 class="img-fluid d-none"
+                id="step-form-img1-inactive"
               />
-              <p class="bold">Detalles de Contacto</p>
-              <span class="step-active"></span>
+              <p id="step1-title" class="bold">Detalles de Contacto</p>
+              <span id="step1-status" class="step-active"></span>
             </div>
             <div class="col-4 text-center">
               <img
                 src="_assets/images/step-form-img2-active.png"
                 alt=""
                 class="img-fluid d-none"
+                id="step-form-img2-active"
               />
               <img
                 src="_assets/images/step-form-img2-inactive.png"
                 alt=""
                 class="img-fluid"
+                id="step-form-img2-inactive"
               />
-              <p class="bold gray">Su empresa</p>
-              <span class="step-inactive"></span>
+              <p id="step2-title" class="bold gray">Su empresa</p>
+              <span id="step2-status" class="step-inactive"></span>
             </div>
             <div class="col-4 text-center">
               <img
                 src="_assets/images/step-form-img3-active.png"
                 alt=""
                 class="img-fluid d-none"
+                id="step-form-img3-active"
               />
               <img
                 src="_assets/images/step-form-img3-inactive.png"
                 alt=""
                 class="img-fluid"
+                id="step-form-img3-inactive"
               />
-              <p class="bold gray">Confirmación</p>
-              <span class="step-inactive"></span>
+              <p id="step3-title" class="bold gray">Confirmación</p>
+              <span id="step3-status" class="step-inactive"></span>
             </div>
           </div>
           <div class="dots"></div>
@@ -142,9 +148,7 @@
             </div>
             <div class="row">
               <div class="col-12 text-right">
-                <span class="bold pointer" id="back-step1">Volver</span>
-                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                <button type="submit" class="btn-green" id="submit-step1">
+                <button type="button" class="btn-green" id="submit-step1">
                   Siguiente &nbsp;
                   <img src="_assets/images/icon-arrow-right-black.png" />
                 </button>
@@ -242,7 +246,7 @@
               <div class="col-12 col-md-9 text-right">
                 <span class="bold pointer" id="back-step2">Volver</span>
                 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                <button type="submit" class="btn-green" id="submit-step2">
+                <button type="button" class="btn-green" id="submit-step2">
                   Siguiente &nbsp;
                   <img src="_assets/images/icon-arrow-right-black.png" />
                 </button>
@@ -263,7 +267,7 @@
                   ¡Listo! En breve nos comunicaremos con Usted.
                 </h1>
                 <div class="text-right">
-                  <button type="submit" class="btn-green" id="submit-step3">
+                  <button type="button" class="btn-green" id="submit-step3">
                     Siguiente &nbsp;
                     <img src="_assets/images/icon-arrow-right-black.png" />
                   </button>
@@ -334,5 +338,11 @@
       rel="preload"
       as="script"
     ></script>
+    <script
+      src="_assets/js/jquery-3.6.0.min.js"
+      rel="preload"
+      as="script"
+    ></script>
+    <script src="_assets/js/join-us.js" rel="preload" as="script"></script>
   </body>
 </html>
