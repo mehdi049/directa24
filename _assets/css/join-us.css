@@ -1,3 +1,7 @@
+#footer {
+  margin-top: 0px;
+}
+
 #join-us-page {
   padding: 50px 0px 80px;
 }
@@ -15,19 +19,80 @@
 
 .step-active {
   background-color: #a9cf2d;
-  border: solid 5px rgba(216,243,174,0.6);
+  border: solid 5px rgba(216, 243, 174, 0.6);
 }
 
 .step-inactive {
   background-color: #707070;
-  border: solid 5px rgba(220,223,224,0.48);
+  border: solid 5px rgba(220, 223, 224, 0.48);
 }
 
 .dots {
-    background-image: url(../images/form-dots.png);
-    background-repeat: repeat-x;
-    height: 10px;
-    margin: auto;
-    width: 820px;
-    margin-top: -40px;
-    margin-bottom: 50px;
+  background-image: url(../images/form-dots.png);
+  background-repeat: repeat-x;
+  height: 10px;
+  margin: auto;
+  width: 820px;
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+  .dots {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dots {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  form p {
+    margin-top: 15px;
+    height: 70px;
+  }
+  .dots {
+    width: 440px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dots {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  form button {
+    margin-top: 15px;
+    height: 70px;
+  }
+
+  form p {
+    margin-top: 10px;
+    height: auto;
+  }
+
+  #m-step-form-header img {
+    width: 95px;
+  }
+
+  .dots-right {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .dots-left {
+    width: 50%;
+    margin-right: 50%;
+  }
+
+  .dots-full {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

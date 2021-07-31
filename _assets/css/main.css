@@ -443,4 +443,8 @@ form {
   #footer {
     margin-top: 40px;
   }
+
+  #submit-step3 {
+    width: 100%;
+  }
 }

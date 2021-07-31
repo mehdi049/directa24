@@ -44,57 +44,90 @@
         <br />
         <br />
         <form class="gray-bg">
-          <div class="row">
-            <div class="col-4 text-center">
-              <img
-                src="_assets/images/step-form-img1-active.png"
-                alt=""
-                class="img-fluid"
-                id="step-form-img1-active"
-              />
-              <img
-                src="_assets/images/step-form-img1-inactive.png"
-                alt=""
-                class="img-fluid d-none"
-                id="step-form-img1-inactive"
-              />
-              <p id="step1-title" class="bold">Detalles de Contacto</p>
-              <span id="step1-status" class="step-active"></span>
+          <div class="d-none d-sm-block">
+            <div class="row">
+              <div class="col-4 text-center">
+                <img
+                  src="_assets/images/step-form-img1-active.png"
+                  alt=""
+                  class="img-fluid"
+                  id="step-form-img1-active"
+                />
+                <img
+                  src="_assets/images/step-form-img1-inactive.png"
+                  alt=""
+                  class="img-fluid d-none"
+                  id="step-form-img1-inactive"
+                />
+                <p id="step1-title" class="bold">Detalles de Contacto</p>
+                <span id="step1-status" class="step-active"></span>
+              </div>
+              <div class="col-4 text-center">
+                <img
+                  src="_assets/images/step-form-img2-active.png"
+                  alt=""
+                  class="img-fluid d-none"
+                  id="step-form-img2-active"
+                />
+                <img
+                  src="_assets/images/step-form-img2-inactive.png"
+                  alt=""
+                  class="img-fluid"
+                  id="step-form-img2-inactive"
+                />
+                <p id="step2-title" class="bold gray">Su empresa</p>
+                <span id="step2-status" class="step-inactive"></span>
+              </div>
+              <div class="col-4 text-center">
+                <img
+                  src="_assets/images/step-form-img3-active.png"
+                  alt=""
+                  class="img-fluid d-none"
+                  id="step-form-img3-active"
+                />
+                <img
+                  src="_assets/images/step-form-img3-inactive.png"
+                  alt=""
+                  class="img-fluid"
+                  id="step-form-img3-inactive"
+                />
+                <p id="step3-title" class="bold gray">Confirmación</p>
+                <span id="step3-status" class="step-inactive"></span>
+              </div>
             </div>
-            <div class="col-4 text-center">
-              <img
-                src="_assets/images/step-form-img2-active.png"
-                alt=""
-                class="img-fluid d-none"
-                id="step-form-img2-active"
-              />
-              <img
-                src="_assets/images/step-form-img2-inactive.png"
-                alt=""
-                class="img-fluid"
-                id="step-form-img2-inactive"
-              />
-              <p id="step2-title" class="bold gray">Su empresa</p>
-              <span id="step2-status" class="step-inactive"></span>
-            </div>
-            <div class="col-4 text-center">
-              <img
-                src="_assets/images/step-form-img3-active.png"
-                alt=""
-                class="img-fluid d-none"
-                id="step-form-img3-active"
-              />
-              <img
-                src="_assets/images/step-form-img3-inactive.png"
-                alt=""
-                class="img-fluid"
-                id="step-form-img3-inactive"
-              />
-              <p id="step3-title" class="bold gray">Confirmación</p>
-              <span id="step3-status" class="step-inactive"></span>
+            <div class="dots"></div>
+          </div>
+
+          <div id="m-step-form-header" class="d-block d-sm-none">
+            <div class="row">
+              <div class="col-12 text-center">
+                <img
+                  src="_assets/images/step-form-img1-active.png"
+                  alt=""
+                  class="img-fluid"
+                  id="m-step-form-img1-active"
+                />
+                <img
+                  src="_assets/images/step-form-img2-active.png"
+                  alt=""
+                  class="img-fluid d-none"
+                  id="m-step-form-img2-active"
+                />
+                <img
+                  src="_assets/images/step-form-img3-active.png"
+                  alt=""
+                  class="img-fluid d-none"
+                  id="m-step-form-img3-active"
+                />
+                <p id="m-step1-title" class="bold">Detalles de Contacto</p>
+                <p id="m-step2-title" class="bold d-none">Su empresa</p>
+                <p id="m-step3-title" class="bold d-none">Confirmación</p>
+                <span class="step-active"></span>
+              </div>
+
+              <div id="m-dots" class="dots dots-right"></div>
             </div>
           </div>
-          <div class="dots"></div>
           <div id="form-step1">
             <div class="row">
               <div class="col-12">
@@ -245,7 +278,8 @@
               <div class="col-12 col-md-3"></div>
               <div class="col-12 col-md-9 text-right">
                 <span class="bold pointer" id="back-step2">Volver</span>
-                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                &nbsp;&nbsp;
+                <span class="d-none d-sm-inline"> &nbsp;&nbsp;</span>
                 <button type="button" class="btn-green" id="submit-step2">
                   Siguiente &nbsp;
                   <img src="_assets/images/icon-arrow-right-black.png" />
@@ -255,7 +289,9 @@
           </div>
           <div class="d-none" id="form-step3">
             <div class="row">
-              <div class="col-12 col-sm-3 col-md-4 text-center">
+              <div
+                class="col-12 col-sm-3 col-md-4 text-center d-none d-sm-block"
+              >
                 <img
                   src="_assets/images/step-form-img1.png"
                   alt=""
@@ -266,9 +302,19 @@
                 <h1 class="regular">
                   ¡Listo! En breve nos comunicaremos con Usted.
                 </h1>
+                <div class="text-center d-block d-sm-none">
+                  <br />
+                  <img
+                    src="_assets/images/step-form-img1.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <br />
+                  <br />
+                </div>
                 <div class="text-right">
                   <button type="button" class="btn-green" id="submit-step3">
-                    Siguiente &nbsp;
+                    Finalizar &nbsp;
                     <img src="_assets/images/icon-arrow-right-black.png" />
                   </button>
                 </div>
@@ -300,7 +346,7 @@
             </h2>
             <br />
           </div>
-          <div class="col-md-6 col-md-3">
+          <div class="col-sm-6 col-md-3">
             <span class="footer-link-header">Direct24</span>
             <a href="#" class="footer-link">Solutions</a>
             <a href="#" class="footer-link">Payment Methods</a>
@@ -308,7 +354,7 @@
             <a href="#" class="footer-link">Developers</a>
             <a href="#" class="footer-link green">Get Started</a>
           </div>
-          <div class="col-md-6 col-md-3">
+          <div class="col-sm-6 col-md-3">
             <span class="footer-link-header">Follow us</span>
             <a href="#" class="footer-link underline">Facebook</a>
             <a href="#" class="footer-link underline">Twitter</a>
