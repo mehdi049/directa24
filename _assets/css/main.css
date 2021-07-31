@@ -4,6 +4,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.relative {
+  position: relative;
+}
+
 .container-fluid {
   max-width: 1800px;
 }

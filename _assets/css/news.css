@@ -1,0 +1,106 @@
+/** top section **/
+#news-page #top-section {
+  padding: 180px 0px 220px;
+}
+
+#news-page #top-section h1 {
+  max-width: 920px;
+  margin: auto;
+}
+
+#news-page #top-section #green-bar {
+  height: 10px;
+  max-width: 237px;
+  background: #a9cf2d;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+/** content section **/
+#news-page #content-section {
+  max-width: 1900px;
+  margin: auto;
+  margin-top: -120px;
+  background-image: url(../images/dots-bg.png), url(../images/dots-bg.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  background-position: 90% 700px, 0px 90%;
+}
+
+#news-page #content-section .news-share {
+  background: #fff;
+  width: 98px;
+  height: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 50px;
+  position: absolute;
+  left: 80px;
+  top: 50px;
+}
+
+#news-page #content-section .news-share a {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#news-page .container-small {
+  max-width: 1051px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  #news-page #content-section {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #news-page #content-section .news-share {
+    width: 47px;
+    height: 150px;
+    padding: 10px;
+    left: 40px;
+    top: 30px;
+  }
+
+  #news-page #content-section .news-share a {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #news-page #content-section .news-share {
+    left: 40px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  #news-page #content-section .news-share {
+    left: 20px;
+    top: 10px;
+  }
+}
+
+/** other news section **/
+#other-new-section .other-news-element {
+  max-width: 770px;
+  margin: auto;
+}
+
+#other-new-section .other-news-element h2 {
+  word-break: break-word;
+}
+
+#other-new-section .other-news-element .news-img {
+  max-height: 450px;
+}
+
+#other-new-section .news-read-more-link,
+#other-new-section .news-read-more-link:hover {
+  text-decoration: none;
+  color: #001e25;
+}
