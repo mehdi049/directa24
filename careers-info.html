@@ -264,7 +264,7 @@
           <div class="modal-body text-center">
             <br />
             <img
-              src="_assets/images/icon-check-green2.png"
+              src="_assets/images/icon-success.png"
               alt=""
               class="img-fluid d-inline-block"
             />
@@ -278,8 +278,44 @@
               data-bs-target="#success-modal"
               data-bs-toggle="modal"
               data-bs-dismiss="modal"
+              onclick="showError()"
             >
               Okay!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="error-modal"
+      tabindex="-1"
+      aria-labelledby="error-modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <br />
+            <img
+              src="_assets/images/icon-error.png"
+              alt=""
+              class="img-fluid d-inline-block"
+            />
+            <br />
+            <br />
+            <p class="bold red">Your action failed.</p>
+            <p class="light">Please try again later.</p>
+
+            <button
+              class="white-btn-black-border-sm"
+              data-bs-target="#error-modal"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+            >
+              Retry
             </button>
           </div>
         </div>
@@ -347,10 +383,19 @@
     ></script>
 
     <script>
-      var myModal = new bootstrap.Modal(
+      var successModal = new bootstrap.Modal(
         document.getElementById("success-modal")
       );
-      myModal.show();
+      successModal.show();
+
+      function showError() {
+        setTimeout(() => {
+          var errorModal = new bootstrap.Modal(
+            document.getElementById("error-modal")
+          );
+          errorModal.show();
+        }, 1000);
+      }
     </script>
   </body>
 </html>

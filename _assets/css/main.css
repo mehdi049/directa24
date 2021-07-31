@@ -36,6 +36,10 @@
   color: rgba(0, 30, 37, 0.5);
 }
 
+.red {
+  color: #eb0909;
+}
+
 .underline {
   text-decoration: underline !important;
 }
@@ -110,6 +114,23 @@ small {
 
 .white-btn-sm {
   border: solid 1px #a9cf2d;
+  text-align: center;
+  text-decoration: none;
+  color: #001e25;
+  padding: 15px 0px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  margin: 25px 0px 30px 0px;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.white-btn-black-border-sm {
+  border: solid 1px #001e25;
   text-align: center;
   text-decoration: none;
   color: #001e25;
