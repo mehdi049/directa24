@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="utf-8"
+      http-equiv="X-UA-Compatible"
+      content="IE=edge,chrome=1"
+    />
+    <link rel="icon" href="_assets/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Directa website" />
+    <link
+      rel="stylesheet"
+      href="_assets/css/bootstrap5.0.2.min.css"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+      rel="stylesheet"
+      as="style"
+      media="all"
+      onload="this.media='all'; this.onload = null"
+    />
+    <link rel="stylesheet" href="_assets/css/main.css" as="style" />
+    <link rel="stylesheet" href="_assets/css/join-us.css" as="style" />
+    <title>Directa24</title>
+  </head>
+  <body>
+    <main id="join-us-page" class="green-dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="_assets/images/logo.png" alt="" class="img-fluid" />
+            <br />
+            <br />
+            <br />
+            <h2 class="green text-center">Acepte pagos locales en LATAM hoy</h2>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <form class="gray-bg">
+          <div class="row">
+            <div class="col-4 text-center">
+              <img
+                src="_assets/images/step-form-img1-active.png"
+                alt=""
+                class="img-fluid"
+              />
+              <img
+                src="_assets/images/step-form-img1-inactive.png"
+                alt=""
+                class="img-fluid d-none"
+              />
+              <p class="bold">Detalles de Contacto</p>
+              <span class="step-active"></span>
+            </div>
+            <div class="col-4 text-center">
+              <img
+                src="_assets/images/step-form-img2-active.png"
+                alt=""
+                class="img-fluid d-none"
+              />
+              <img
+                src="_assets/images/step-form-img2-inactive.png"
+                alt=""
+                class="img-fluid"
+              />
+              <p class="bold gray">Su empresa</p>
+              <span class="step-inactive"></span>
+            </div>
+            <div class="col-4 text-center">
+              <img
+                src="_assets/images/step-form-img3-active.png"
+                alt=""
+                class="img-fluid d-none"
+              />
+              <img
+                src="_assets/images/step-form-img3-inactive.png"
+                alt=""
+                class="img-fluid"
+              />
+              <p class="bold gray">Confirmación</p>
+              <span class="step-inactive"></span>
+            </div>
+          </div>
+          <div class="dots"></div>
+          <div id="form-step1">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="regular text-center">
+                  Empecemos con su información de contacto
+                </h1>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="email" class="form-label">E-Mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="E-Mail"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="nombre-completo" class="form-label"
+                  >Nombre completo</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre-completo"
+                  placeholder="Ingrese su nombre completo"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="phone" class="form-label">Número de teléfono</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="text"
+                  placeholder="(11) 96123-4567"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="skype" class="form-label">ID Skype</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="skype"
+                  placeholder="Ingrese su ID de Skype"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-right">
+                <span class="bold pointer" id="back-step1">Volver</span>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <button type="submit" class="btn-green" id="submit-step1">
+                  Siguiente &nbsp;
+                  <img src="_assets/images/icon-arrow-right-black.png" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="d-none" id="form-step2">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="regular text-center">
+                  Seguimos con unos detalles de su empresa
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="Compania" class="form-label">Compañía*</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="Compania"
+                  placeholder="Compañía"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="sitio-web" class="form-label">Sitio web*</label>
+                <input
+                  class="form-control"
+                  type="url"
+                  id="sitio-web"
+                  placeholder="Ingrese su nombre completo"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="meracados" class="form-label"
+                  >Meracados que le interesa apuntar con nosotros</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  id="meracados"
+                  placeholder="Ingrese los mercados"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="anios" class="form-label">Años en operación</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="anios"
+                  placeholder="Ingrese la cantidad de años en operación"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="alguien" class="form-label"
+                  >¿Está en contacto con alguien de nuestro equipo
+                  comercial?</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  id="alguien"
+                  placeholder="Ingrese los mercados"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="contacto" class="form-label"
+                  >¿Con quién estás en contacto?</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  id="contacto"
+                  placeholder="Ingrese el nombre de contacto"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <label for="comentarios" class="form-label">Comentarios</label>
+                <textarea
+                  class="form-control"
+                  id="comentarios"
+                  rows="5"
+                  placeholder="Ingrese sus comentarios"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-3"></div>
+              <div class="col-12 col-md-9 text-right">
+                <span class="bold pointer" id="back-step2">Volver</span>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <button type="submit" class="btn-green" id="submit-step2">
+                  Siguiente &nbsp;
+                  <img src="_assets/images/icon-arrow-right-black.png" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="d-none" id="form-step3">
+            <div class="row">
+              <div class="col-12 col-sm-3 col-md-4 text-center">
+                <img
+                  src="_assets/images/step-form-img1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-12 col-sm-9 col-md-8">
+                <h1 class="regular">
+                  ¡Listo! En breve nos comunicaremos con Usted.
+                </h1>
+                <div class="text-right">
+                  <button type="submit" class="btn-green" id="submit-step3">
+                    Siguiente &nbsp;
+                    <img src="_assets/images/icon-arrow-right-black.png" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <div id="footer" class="green-dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img
+              src="_assets/images/footer-img1.png"
+              alt=""
+              class="img-fluid"
+            />
+            &nbsp;
+            <img
+              src="_assets/images/footer-img2.png"
+              alt=""
+              class="img-fluid"
+            />
+            <h2 class="bold">
+              Payment solutions in Latin America, India, Asia and Africa.
+            </h2>
+            <br />
+          </div>
+          <div class="col-md-6 col-md-3">
+            <span class="footer-link-header">Direct24</span>
+            <a href="#" class="footer-link">Solutions</a>
+            <a href="#" class="footer-link">Payment Methods</a>
+            <a href="#" class="footer-link">Coverage</a>
+            <a href="#" class="footer-link">Developers</a>
+            <a href="#" class="footer-link green">Get Started</a>
+          </div>
+          <div class="col-md-6 col-md-3">
+            <span class="footer-link-header">Follow us</span>
+            <a href="#" class="footer-link underline">Facebook</a>
+            <a href="#" class="footer-link underline">Twitter</a>
+            <a href="#" class="footer-link underline">Instagram</a>
+            <a href="#" class="footer-link underline">LinkedIn</a>
+          </div>
+        </div>
+
+        <hr />
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <span class="small"
+              >2021 Directa24 - All Rights Reserved. Powered by Ogilvy</span
+            >
+          </div>
+          <div class="col-12 col-md-6 text-right">
+            <a href="#" class="small">Cookies Policy</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="small">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="_assets/js/bootstrap5.0.2.min.js"
+      rel="preload"
+      as="script"
+    ></script>
+  </body>
+</html>

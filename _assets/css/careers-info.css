@@ -1,0 +1,27 @@
+#careers-info-page #job-requirement {
+  padding-top: 200px;
+}
+
+#careers-info-page #job-description-content {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+#careers-info-page form button {
+  margin: auto;
+  display: block !important;
+}
+
+@media screen and (max-width: 576px) {
+  #careers-info-page #job-requirement {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  form button {
+    width: 100% !important;
+    display: block !important;
+  }
+}

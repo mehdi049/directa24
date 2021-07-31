@@ -1,0 +1,33 @@
+#join-us-page {
+  padding: 50px 0px 80px;
+}
+
+.step-active,
+.step-inactive {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.step-active {
+  background-color: #a9cf2d;
+  border: solid 5px rgba(216,243,174,0.6);
+}
+
+.step-inactive {
+  background-color: #707070;
+  border: solid 5px rgba(220,223,224,0.48);
+}
+
+.dots {
+    background-image: url(../images/form-dots.png);
+    background-repeat: repeat-x;
+    height: 10px;
+    margin: auto;
+    width: 820px;
+    margin-top: -40px;
+    margin-bottom: 50px;
