@@ -25,7 +25,7 @@
   background-image: url(../images/dots-bg.png), url(../images/dots-bg.png);
   background-repeat: no-repeat;
   background-size: 180px;
-  background-position: 90% 700px, 0px 90%;
+  background-position: 90% 700px, 0px 92%;
 }
 
 #news-page #content-section .news-share {
@@ -49,6 +49,17 @@
 #news-page .container-small {
   max-width: 1051px;
   margin: auto;
+}
+
+#news-page .video-container {
+  margin: 0px;
+  padding: 0px;
+  max-width: none;
+}
+
+#news-page .video-container img {
+  width: 100%;
+  max-width: none;
 }
 
 @media screen and (max-width: 1400px) {
@@ -87,20 +98,68 @@
 
 /** other news section **/
 #other-new-section .other-news-element {
-  max-width: 770px;
   margin: auto;
 }
 
 #other-new-section .other-news-element h2 {
   word-break: break-word;
+  font-size: 43px;
 }
 
 #other-new-section .other-news-element .news-img {
-  max-height: 450px;
+  max-height: 428px;
 }
 
 #other-new-section .news-read-more-link,
 #other-new-section .news-read-more-link:hover {
   text-decoration: none;
   color: #001e25;
+}
+
+#other-new-section .jcarousel {
+  position: relative;
+  overflow: auto;
+  max-width: 1230px;
+}
+
+#other-new-section .jcarousel ul {
+  position: relative;
+  width: 10000px;
+  padding: 0px;
+}
+
+#other-new-section .jcarousel li {
+  float: left;
+  max-width: 600px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+#other-new-section .scroll-btn-left,
+#other-new-section .scroll-btn-right {
+  width: 150px;
+  cursor: pointer;
+}
+
+#other-new-section .scroll-btn-left {
+  position: absolute;
+  left: 0px;
+  top: 25%;
+}
+
+#other-new-section .scroll-btn-right {
+  position: absolute;
+  right: 0px;
+  top: 25%;
+}
+
+@media screen and (max-width: 1200px) {
+  #other-new-section .jcarousel li {
+    max-width: 450px;
+    margin-right: 20px;
+  }
+
+  #other-new-section .jcarousel li h2 {
+    font-size: 35px;
+  }
 }
