@@ -260,7 +260,45 @@
   border-radius: 15px;
   margin-top: 30px;
   max-width: 349px;
-  box-shadow: 6px 0px 15px rgb(0 30 37 / 30%);
+  box-shadow: 6px 0px 15px rgba(0, 30, 37, 0.3);
+}
+
+#solutions-page #latest-news .jcarousel-latest-news {
+  position: relative;
+  overflow: hidden;
+  max-width: 1100px;
+  margin: auto;
+}
+
+#solutions-page #latest-news .jcarousel-latest-news ul {
+  position: relative;
+  width: 10000px;
+  padding: 0px;
+}
+
+#solutions-page #latest-news .jcarousel-latest-news li {
+  float: left;
+  max-width: 600px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+#solutions-page #latest-news .scroll-btn-left-latest-news,
+#solutions-page #latest-news .scroll-btn-right-latest-news {
+  width: 150px;
+  cursor: pointer;
+}
+
+#solutions-page #latest-news .scroll-btn-left-latest-news {
+  position: absolute;
+  left: 0px;
+  top: 35%;
+}
+
+#solutions-page #latest-news .scroll-btn-right-latest-news {
+  position: absolute;
+  right: 0px;
+  top: 35%;
 }
 
 #solutions-page #latest-news .latest-news-item .latest-news-text-container {
