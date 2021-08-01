@@ -92,7 +92,7 @@ small {
 }
 
 .btn-green img {
-  margin: initial !important;
+  margin: 0px !important;
 }
 
 .btn-green-lg {
@@ -209,6 +209,10 @@ p.light,
 span.light,
 .light .bold {
   font-size: 18px;
+}
+
+a img {
+  border: none;
 }
 
 p {
@@ -365,7 +369,7 @@ form {
   top: 0;
   width: 100%;
   z-index: 2;
-  box-shadow: 0px 15px 15px rgb(0 30 37 / 50%);
+  box-shadow: 0px 15px 15px rgba(0, 30, 37, 0.5);
   min-height: 130px;
 }
 
