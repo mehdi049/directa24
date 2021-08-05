@@ -142,7 +142,7 @@
 
 #other-new-section .other-news-element h2 {
   word-break: break-word;
-  font-size: 43px;
+  font-size: 34.8px;
 }
 
 #other-new-section .other-news-element .news-img {
@@ -153,6 +153,10 @@
 #other-new-section .news-read-more-link:hover {
   text-decoration: none;
   color: #001e25;
+}
+
+#other-new-section .news-read-more-link img {
+  max-width: 22.4px;
 }
 
 #other-new-section .jcarousel {
@@ -190,6 +194,15 @@
   position: absolute;
   right: 0px;
   top: 25%;
+}
+
+@media screen and (min-width: 1400px) {
+  #other-new-section .other-news-element h2 {
+    font-size: 43px;
+  }
+  #other-new-section .news-read-more-link img {
+    max-width: inherit;
+  }
 }
 
 @media screen and (max-width: 1200px) {

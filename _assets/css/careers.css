@@ -102,6 +102,7 @@
   }
   #careers-page #our-offices-section h1 {
     font-size: 20px;
+    margin-top: -20px;
   }
   #careers-page #our-offices-section img {
     max-width: 540px;
@@ -119,9 +120,10 @@
     height: 190px;
     padding: 10px 0px;
   }
-  #our-offices-section h1 {
-    font-size: 14px;
-    font-weight: 700;
+
+  #careers-page #our-offices-section h1 {
+    font-size: 15.5px;
+    margin-top: 0px;
   }
   #careers-page #our-offices-section img {
     max-width: 350px;
@@ -144,29 +146,29 @@
 
 /** open positions section **/
 #careers-page #open-positions-section {
-  padding: 100px 0px;
+  padding: 80px 0px;
   margin-top: 130px;
 }
 
 #careers-page #open-positions-section .job-position {
   margin-top: 25px;
   border-radius: 15px;
-  min-height: 80px;
-  padding: 15px 7px;
+  min-height: 64px;
+  padding: 12px 5.6px;
 }
 
 #careers-page #open-positions-section .job-title-abbr {
   background: #101010;
   color: #fff;
-  padding: 15px;
+  padding: 12px;
   border-radius: 8px;
   text-align: center;
   box-sizing: border-box;
-  max-width: 59px;
-  max-height: 59px;
+  max-width: 47px;
+  max-height: 47px;
   display: block;
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 16.8px;
 }
 
 #careers-page #open-positions-section .job-title {
@@ -184,15 +186,38 @@
   border: solid 1px #fff;
   color: #000;
   text-decoration: none;
-  padding: 15px 36px;
+  padding: 12px 28.8px;
   border-radius: 50px;
   text-align: center;
-  font-size: 18px;
+  font-size: 14.4px;
 }
 
 #careers-page #open-positions-section .job-apply:hover {
   color: #fff;
   background: transparent;
+}
+
+#careers-page #open-positions-section a img {
+  max-width: 27.2px;
+}
+
+@media screen and (min-width: 1400px) {
+  #careers-page #open-positions-section .job-position {
+    min-height: 80px;
+    padding: 15px 7px;
+  }
+
+  #careers-page #open-positions-section .job-title-abbr {
+    padding: 15px;
+    max-width: 59px;
+    max-height: 59px;
+    font-size: 21px;
+  }
+
+  #careers-page #open-positions-section .job-apply {
+    padding: 15px 36px;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 1200px) {

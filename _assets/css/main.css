@@ -9,6 +9,8 @@
 }
 
 .container-fluid {
+  width: 95%;
+  margin: auto;
   max-width: 1800px;
 }
 
@@ -59,7 +61,7 @@
 
 .small,
 small {
-  font-size: 12px;
+  font-size: 9.6px;
 }
 
 .regular {
@@ -79,14 +81,14 @@ small {
   text-align: center;
   text-decoration: none;
   color: #001e25;
-  padding: 25px 0px;
+  padding: 20px 0px;
   border-radius: 40px;
-  font-size: 18px;
+  font-size: 14.4px;
   font-weight: 700;
   display: inline-block;
-  width: 300px;
-  height: 70px;
-  margin-top: 25px;
+  width: 240px;
+  height: 56px;
+  margin-top: 20px;
   box-sizing: border-box;
   border: none;
 }
@@ -100,13 +102,13 @@ small {
   text-align: center;
   text-decoration: none;
   color: #001e25;
-  padding: 25px 0px;
+  padding: 20px 0px;
   border-radius: 40px;
-  font-size: 18px;
+  font-size: 14.4px;
   font-weight: 700;
   display: inline-block;
-  width: 350px;
-  height: 70px;
+  width: 240px;
+  height: 56px;
   margin-top: 25px;
   box-sizing: border-box;
   border: none;
@@ -117,9 +119,9 @@ small {
   text-align: center;
   text-decoration: none;
   color: #001e25;
-  padding: 15px 0px;
+  padding: 12px 0px;
   border-radius: 40px;
-  font-size: 18px;
+  font-size: 14.4px;
   font-weight: 700;
   display: inline-block;
   width: 200px;
@@ -134,9 +136,9 @@ small {
   text-align: center;
   text-decoration: none;
   color: #001e25;
-  padding: 15px 0px;
+  padding: 12px 0px;
   border-radius: 40px;
-  font-size: 18px;
+  font-size: 14.4px;
   font-weight: 700;
   display: inline-block;
   width: 200px;
@@ -151,16 +153,24 @@ small {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  padding: 25px 0px;
+  padding: 20px 0px;
   border-radius: 40px;
-  font-size: 18px;
+  font-size: 14.4px;
   font-weight: 700;
   display: inline-block;
-  width: 300px;
-  height: 70px;
+  width: 240px;
+  height: 56px;
   margin-top: 25px;
   box-sizing: border-box;
   border: none;
+}
+
+.btn-green img,
+.btn-green-lg img,
+.white-btn-sm img,
+.white-btn-black-border-sm img,
+.btn-black img {
+  max-width: 20px;
 }
 
 .btn-green:hover,
@@ -177,7 +187,7 @@ small {
 }
 
 .scroll-link {
-  max-width: 180px;
+  max-width: 144px;
 }
 
 .not-nav-list li {
@@ -201,14 +211,14 @@ small {
 
 p.bold,
 span.bold {
-  font-size: 24px;
+  font-size: 19.2px;
 }
 
 li.light,
 p.light,
 span.light,
 .light .bold {
-  font-size: 18px;
+  font-size: 14.4px;
 }
 
 a img {
@@ -220,19 +230,19 @@ p {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 38.4px;
   font-weight: 400;
 }
 
 form label {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 10.4px;
   margin-top: 30px;
 }
 
@@ -279,6 +289,88 @@ form {
   border-radius: 15px;
 }
 
+@media screen and (min-width: 1400px) {
+  .btn-green,
+  .btn-green-lg,
+  .white-btn-sm,
+  .white-btn-black-border-sm,
+  .btn-black {
+    padding: 25px 0px;
+    width: 300px;
+    height: 70px;
+    margin-top: 25px;
+  }
+
+  .btn-green-lg {
+    width: 350px;
+  }
+
+  .white-btn-sm,
+  .white-btn-black-border-sm {
+    padding: 15px 0px;
+    width: 200px;
+    height: 60px;
+    margin: 25px 0px 30px 0px;
+  }
+
+  .btn-green img,
+  .btn-green-lg img,
+  .white-btn-sm img,
+  .white-btn-black-border-sm img,
+  .btn-black img {
+    max-width: inherit;
+  }
+
+  .scroll-link {
+    max-width: 180px;
+  }
+
+  .small,
+  small {
+    font-size: 12px;
+  }
+
+  p.bold,
+  span.bold {
+    font-size: 24px;
+  }
+
+  li.light,
+  p.light,
+  span.light,
+  .light .bold,
+  .btn-green,
+  .btn-green-lg,
+  .white-btn-sm,
+  .white-btn-black-border-sm,
+  .btn-black {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  form label {
+    font-size: 13px;
+  }
+
+  .form-control,
+  .form-select {
+    border-radius: 18px;
+    padding: 13.5px 10px;
+  }
+
+  .fake-input-file {
+    border-radius: 18px;
+    height: 53px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h1,
   h2 {
@@ -322,6 +414,10 @@ form {
 }
 
 @media screen and (max-width: 576px) {
+  .container-fluid {
+    width: 95%;
+  }
+
   h1,
   h2 {
     font-size: 30px;
@@ -395,16 +491,17 @@ form {
   font-size: 18px;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1400px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    font-size: 14px;
+    margin-right: 15px;
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    margin-right: 15px;
-    font-size: 0.81rem;
+    margin-right: 13px;
+    font-size: 0.76rem;
     padding-right: 0.2rem;
     padding-left: 0.2rem;
   }
