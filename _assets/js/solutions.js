@@ -1,3 +1,7 @@
+setInterval(function () {
+  $(".scroll-btn-right").trigger("click");
+}, 2000);
+
 if ($(window).width() <= 576) {
   $(".jcarousel").imgScroll({
     btn01: ".scroll-btn-left",
