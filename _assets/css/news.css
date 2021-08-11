@@ -197,12 +197,15 @@
 }
 
 @media screen and (min-width: 1400px) {
+  /*
   #other-new-section .other-news-element h2 {
     font-size: 43px;
   }
+  
   #other-new-section .news-read-more-link img {
     max-width: inherit;
   }
+  */
 }
 
 @media screen and (max-width: 1200px) {

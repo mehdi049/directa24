@@ -334,7 +334,7 @@
 }
 
 #solutions-page #latest-news .latest-news-item .latest-news-text-container p {
-  min-height: 110px;
+  min-height: 50px;
 }
 
 #solutions-page #latest-news .latest-news-item a {
@@ -342,10 +342,12 @@
 }
 
 @media screen and (min-width: 1400px) {
+  /*
   #solutions-page #latest-news .latest-news-item .white img,
   #solutions-page #latest-news .latest-news-item .text-right img {
     max-width: inherit;
   }
+  */
 }
 
 @media screen and (max-width: 992px) {

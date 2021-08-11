@@ -290,6 +290,7 @@ form {
 }
 
 @media screen and (min-width: 1400px) {
+  /*
   .btn-green,
   .btn-green-lg,
   .white-btn-sm,
@@ -369,6 +370,7 @@ form {
     border-radius: 18px;
     height: 53px;
   }
+  */
 }
 
 @media screen and (max-width: 768px) {
@@ -488,7 +490,14 @@ form {
   text-transform: uppercase;
   font-weight: 700;
   margin-right: 25px;
-  font-size: 18px;
+  font-size: 14.4px;
+}
+
+@media screen and (min-width: 1400px) {
+  /* .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+  */
 }
 
 @media screen and (max-width: 1400px) {
