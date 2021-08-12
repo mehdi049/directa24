@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- menu -->
-    <nav class="navbar navbar-expand-lg green-dark-bg">
+    <nav id="menu" class="navbar navbar-expand-lg green-dark-bg">
       <div class="container-fluid">
         <a class="navbar-brand" href="./"
           ><img src="_assets/images/logo.png" alt=""
@@ -54,22 +54,24 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">payment methods</a>
+              <a class="nav-link" href="#payment-methods">payment methods</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">coverage</a>
+              <a class="nav-link" href="#emerging-markets">coverage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">developers</a>
+              <a class="nav-link" href="#integrate-with-directa24"
+                >developers</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="careers.html">careers</a>
+              <a class="nav-link" href="./careers.html">careers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="news.html">news</a>
+              <a class="nav-link" href="./news.html">news</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link green" href="#">get started</a>
+              <a class="nav-link green" href="#our-product">get started</a>
             </li>
           </ul>
         </div>
@@ -81,12 +83,13 @@
       <div id="top-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <h1 class="green">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <h1 class="green regular">
                 The fastest growing payment solution in emerging markets
               </h1>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
               <p class="light white">
                 Reach emerging markets in the easiest way possible and start
                 boosting your business with Directa24. We offer a wide range of
@@ -98,7 +101,7 @@
           </div>
         </div>
 
-        <a href="#"
+        <a href="#accept-payment"
           ><img
             src="_assets/images/icon-arrow-bottom.png"
             class="scroll-link"
@@ -110,9 +113,12 @@
       <div id="accept-payment">
         <div class="container">
           <div class="row">
-            <div class="order-2 order-sm-1 col-sm-6 col-lg-5">
+            <div class="d-none d-lg-block col-lg-1"></div>
+            <div class="order-2 order-sm-1 col-sm-6 col-lg-4">
               <h2>
-                Accept payments <span class="green"> local currency</span>
+                Accept payments <br /><span class="green">
+                  in local currency</span
+                >
               </h2>
               <p class="light">
                 Alternative methods to pay online in local currency, such as
@@ -276,7 +282,7 @@
             </ul>
           </div>
           <br />
-          <div class="text-center">
+          <div class="text-center d-none">
             <a class="scroll-btn-left" href="javascript:void(0);"></a>
             <a class="scroll-btn-right" href="javascript:void(0);"></a>
           </div>
@@ -294,9 +300,13 @@
                 class="img-fluid"
               />
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="d-none d-xxl-block col-xxl-1"></div>
+            <div class="col-12 col-lg-5 col-xxl-4">
               <h1 class="regular">
-                Know <span class="green">our product</span>
+                Know
+                <span class="green"
+                  >our <br class="d-none d-xl-inline" />product</span
+                >
                 <ul class="not-nav-list">
                   <li class="light">
                     Integrate directly to the most popular alternative payment
@@ -323,7 +333,8 @@
       <div id="we-are-hiring">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-7">
+            <div class="d-none d-xl-block col-xl-1"></div>
+            <div class="col-12 col-lg-7 col-xl-5">
               <h1 class="regular">
                 <span class="white">We're hiring!</span> <br />
                 Start working with us.
@@ -332,8 +343,17 @@
             <div class="col-12 col-lg-5">
               <a href="./careers.html" class="btn-black"
                 >Join our Team &nbsp;
-                <img src="_assets/images/icon-arrow-right-white.png" alt=""
-              /></a>
+                <img
+                  src="_assets/images/icon-arrow-right-white.png"
+                  class="hide-on-hover"
+                  alt=""
+                />
+                <img
+                  src="_assets/images/icon-arrow-right-black.png"
+                  class="display-on-hover"
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -637,11 +657,13 @@
           </div>
           <div class="col-sm-6 col-md-3">
             <span class="footer-link-header">Direct24</span>
-            <a href="./index.html" class="footer-link">Solutions</a>
-            <a href="#" class="footer-link">Payment Methods</a>
-            <a href="#" class="footer-link">Coverage</a>
-            <a href="#" class="footer-link">Developers</a>
-            <a href="#" class="footer-link green">Get Started</a>
+            <a href="#" class="footer-link">Solutions</a>
+            <a href="./#payment-methods" class="footer-link">Payment Methods</a>
+            <a href="./#emerging-markets" class="footer-link">Coverage</a>
+            <a href="./#integrate-with-directa24" class="footer-link"
+              >Developers</a
+            >
+            <a href="#our-product" class="footer-link green">Get Started</a>
           </div>
           <div class="col-sm-6 col-md-3">
             <span class="footer-link-header">Follow us</span>
@@ -667,7 +689,7 @@
         </div>
       </div>
 
-      <a href="#" class="scroll-link scroll-top-link"
+      <a href="#menu" class="scroll-link scroll-top-link"
         ><img src="_assets/images/icon-arrow-top.png" alt="" class="img-fluid"
       /></a>
     </div>

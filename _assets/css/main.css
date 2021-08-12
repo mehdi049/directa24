@@ -1,4 +1,8 @@
 /** general **/
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   outline: none;
   font-family: "Montserrat", sans-serif;
@@ -91,6 +95,7 @@ small {
   margin-top: 20px;
   box-sizing: border-box;
   border: none;
+  box-shadow: 3px 10px 20px rgba(169, 207, 45, 0.5);
 }
 
 .btn-green img {
@@ -112,6 +117,14 @@ small {
   margin-top: 25px;
   box-sizing: border-box;
   border: none;
+  box-shadow: 3px 10px 20px rgba(169, 207, 45, 0.5);
+}
+
+.btn-green:hover,
+.btn-green-lg:hover {
+  background: #fff;
+  border: solid 1px #a9cf2d;
+  box-shadow: none;
 }
 
 .white-btn-sm {
@@ -148,6 +161,9 @@ small {
   background: transparent;
 }
 
+.display-on-hover {
+  display: none;
+}
 .btn-black {
   background: #001e25;
   text-align: center;
@@ -163,6 +179,21 @@ small {
   margin-top: 25px;
   box-sizing: border-box;
   border: none;
+  box-shadow: 3px 10px 20px rgba(0, 30, 37, 0.18);
+}
+
+.btn-black:hover {
+  background: transparent;
+  border: solid 1px #001e25;
+  color: #001e25;
+  box-shadow: none;
+}
+
+.btn-black:hover .display-on-hover {
+  display: inline;
+}
+.btn-black:hover .hide-on-hover {
+  display: none;
 }
 
 .btn-green img,
@@ -178,20 +209,21 @@ small {
   color: #001e25;
 }
 
-.btn-black:hover {
-  color: #fff;
-}
-
 .not-nav-list {
   padding-left: 20px;
 }
 
 .scroll-link {
-  max-width: 144px;
+  width: 150px;
+}
+
+.scroll-link:hover {
+  width: 160px;
+  transition: 0.2s;
 }
 
 .not-nav-list li {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .black-check-list {
@@ -212,6 +244,7 @@ small {
 p.bold,
 span.bold {
   font-size: 19.2px;
+  line-height: 30px;
 }
 
 li.light,
@@ -219,6 +252,7 @@ p.light,
 span.light,
 .light .bold {
   font-size: 14.4px;
+  line-height: 30px;
 }
 
 a img {
@@ -230,7 +264,7 @@ p {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 45px;
   font-weight: 700;
 }
 
@@ -374,9 +408,16 @@ form {
 }
 
 @media screen and (max-width: 768px) {
+  .container,
+  .container-fluid {
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+  }
+
   h1,
   h2 {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 400;
   }
 
@@ -385,10 +426,12 @@ form {
   span.light,
   .light .bold {
     font-size: 15px;
+    line-height: 25px;
   }
   p.bold,
   span.bold {
     font-size: 20px;
+    line-height: 25px;
   }
 
   .btn-green,
@@ -409,20 +452,12 @@ form {
   .btn-black img {
     width: 17px;
   }
-
-  .scroll-link {
-    max-width: 150px;
-  }
 }
 
 @media screen and (max-width: 576px) {
-  .container-fluid {
-    width: 95%;
-  }
-
   h1,
   h2 {
-    font-size: 30px;
+    font-size: 27px !important;
     font-weight: 400;
   }
 
