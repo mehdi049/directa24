@@ -349,8 +349,16 @@
   box-shadow: 6px 0px 15px rgba(0, 30, 37, 0.3);
 }
 
-#solutions-page #latest-news .latest-news-item .white img {
-  max-width: 22.4px;
+#solutions-page #latest-news .latest-news-item .news-img-container img:hover {
+  zoom: 1.2;
+  transition: 0.5s;
+  max-width: 120%;
+}
+
+#solutions-page #latest-news .latest-news-item .news-img-container {
+  overflow: hidden;
+  max-width: 350px;
+  max-height: 350px;
 }
 
 #solutions-page #latest-news .latest-news-item .text-right img {
@@ -450,11 +458,16 @@
 
 @media screen and (max-width: 768px) {
   #solutions-page #latest-news .jcarousel-latest-news {
-    max-width: 365px;
+    max-width: 290px;
   }
   #solutions-page #latest-news .jcarousel-latest-news li {
-    max-width: 365px;
+    max-width: 290px;
   }
+
+  #solutions-page #latest-news .latest-news-item .news-img-container {
+    max-height: 290px;
+  }
+
   #solutions-page #latest-news {
     padding: 60px 0px 20px;
   }
