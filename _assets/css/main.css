@@ -161,9 +161,6 @@ small {
   background: transparent;
 }
 
-.display-on-hover {
-  display: none;
-}
 .btn-black {
   background: #001e25;
   text-align: center;
@@ -224,6 +221,10 @@ small {
 
 .not-nav-list li {
   margin-top: 15px;
+}
+
+.display-on-hover {
+  display: none;
 }
 
 .black-check-list {
@@ -410,7 +411,7 @@ form {
 @media screen and (max-width: 768px) {
   .container,
   .container-fluid {
-    width: 80%;
+    width: 83%;
     margin: auto;
     padding: 0px;
   }
@@ -506,9 +507,9 @@ form {
   min-height: 130px;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  border-color: rgba(255, 255, 255, 0.1);
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("../images/menu-mobile-open.png");
+  background-size: 200%;
 }
 
 .navbar-toggler:focus {
@@ -526,6 +527,7 @@ form {
   font-weight: 700;
   margin-right: 25px;
   font-size: 14.4px;
+  letter-spacing: 2px;
 }
 
 @media screen and (min-width: 1400px) {
@@ -537,23 +539,51 @@ form {
 
 @media screen and (max-width: 1400px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    margin-right: 15px;
-    font-size: 15px;
+    margin-right: 12px;
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    margin-right: 13px;
-    font-size: 0.76rem;
+    margin-right: 10px;
+    font-size: 0.6rem;
     padding-right: 0.2rem;
     padding-left: 0.2rem;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .navbar-nav .nav-link {
-    display: inline-block;
+  .navbar-toggler[aria-expanded="true"] {
+    background-color: #a9cf2d;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("../images/menu-mobile-close.png");
+    background-size: 200%;
+  }
+
+  .navbar-toggler[aria-expanded="false"] {
+    background-color: transparent;
+  }
+
+  .navbar-collapse {
+    height: 100vh;
+  }
+
+  .navbar-nav {
+    margin-top: 50px;
+  }
+
+  .navbar-collapse .nav-item {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    display: inline;
+    font-size: 0.8rem;
   }
   .navbar-toggler {
     border: solid 2px #a9cf2d;

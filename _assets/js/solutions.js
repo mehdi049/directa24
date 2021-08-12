@@ -19,5 +19,5 @@ if ($(window).width() <= 576) {
 $(".jcarousel-latest-news").imgScroll({
   btn01: ".scroll-btn-left-latest-news",
   btn02: ".scroll-btn-right-latest-news",
-  step: 370,
+  step: 365,
 });
