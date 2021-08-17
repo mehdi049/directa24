@@ -401,6 +401,7 @@
   position: absolute;
   right: 0px;
   top: 35%;
+  text-align: right;
 }
 
 #solutions-page #latest-news .latest-news-item .latest-news-text-container {
@@ -460,6 +461,12 @@
   #solutions-page #latest-news .jcarousel-latest-news {
     max-width: 290px;
   }
+
+  #solutions-page #latest-news .scroll-btn-left-latest-news img,
+  #solutions-page #latest-news .scroll-btn-right-latest-news img {
+    max-width: 100px;
+  }
+
   #solutions-page #latest-news .jcarousel-latest-news li {
     max-width: 290px;
   }
@@ -512,6 +519,12 @@
   }
   #solutions-page #emerging-markets p {
     bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  #solutions-page #emerging-markets {
+    background-image: url("../images/solution-map-bg-m.png");
   }
 }
 

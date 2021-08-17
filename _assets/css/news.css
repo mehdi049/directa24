@@ -196,6 +196,7 @@
   position: relative;
   overflow: hidden;
   max-width: 1230px;
+  margin: auto;
 }
 
 #other-new-section .jcarousel ul {
@@ -227,27 +228,58 @@
   position: absolute;
   right: 0px;
   top: 25%;
+  text-align: right;
 }
 
-@media screen and (min-width: 1400px) {
-  /*
-  #other-new-section .other-news-element h2 {
-    font-size: 43px;
+@media screen and (max-width: 1400px) {
+  #other-new-section .jcarousel {
+    max-width: 1120px;
   }
-  
-  #other-new-section .news-read-more-link img {
-    max-width: inherit;
+  #other-new-section .jcarousel li {
+    max-width: 550px;
   }
-  */
 }
 
 @media screen and (max-width: 1200px) {
+  #other-new-section .jcarousel {
+    max-width: 920px;
+  }
+
   #other-new-section .jcarousel li {
     max-width: 450px;
-    margin-right: 20px;
   }
 
   #other-new-section .jcarousel li h2 {
     font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #other-new-section .jcarousel {
+    max-width: 690px;
+  }
+  #other-new-section .jcarousel li {
+    max-width: 335px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #other-new-section .jcarousel .scroll-btn-left img,
+  #other-new-section .jcarousel .scroll-btn-right img {
+    max-width: 100px;
+  }
+
+  #other-new-section .jcarousel {
+    max-width: 355px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #other-new-section .jcarousel {
+    max-width: 310px;
+  }
+
+  #other-new-section .jcarousel li {
+    max-width: 290px;
   }
 }
