@@ -22,10 +22,17 @@
   max-width: 1900px;
   margin: auto;
   margin-top: -120px;
-  background-image: url(../images/dots-bg.png), url(../images/dots-bg.png);
+  background-image: url(../images/dots-bg2.png);
   background-repeat: no-repeat;
   background-size: 180px;
-  background-position: 90% 700px, 0px 92%;
+  background-position: 0px 92%;
+}
+
+#news-page #content-section .dots-img {
+  max-width: 200px;
+  float: right;
+  margin-right: -80px;
+  margin-top: -100px;
 }
 
 #news-page #content-section .news-share {
@@ -99,6 +106,12 @@
 }
 
 @media screen and (max-width: 992px) {
+  #news-page #content-section .dots-img {
+    max-width: 180px;
+    margin-right: -60px;
+    margin-top: -100px;
+  }
+
   #news-page #content-section .news-share {
     width: 47px;
     height: 150px;
@@ -113,6 +126,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  #news-page #content-section .dots-img {
+    max-width: 120px;
+    margin-right: -20px;
+    margin-top: -60px;
+  }
+
   #news-page #content-section .news-share {
     left: 40px;
     top: 20px;
