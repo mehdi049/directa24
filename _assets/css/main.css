@@ -324,90 +324,6 @@ form {
   border-radius: 15px;
 }
 
-@media screen and (min-width: 1400px) {
-  /*
-  .btn-green,
-  .btn-green-lg,
-  .white-btn-sm,
-  .white-btn-black-border-sm,
-  .btn-black {
-    padding: 25px 0px;
-    width: 300px;
-    height: 70px;
-    margin-top: 25px;
-  }
-
-  .btn-green-lg {
-    width: 350px;
-  }
-
-  .white-btn-sm,
-  .white-btn-black-border-sm {
-    padding: 15px 0px;
-    width: 200px;
-    height: 60px;
-    margin: 25px 0px 30px 0px;
-  }
-
-  .btn-green img,
-  .btn-green-lg img,
-  .white-btn-sm img,
-  .white-btn-black-border-sm img,
-  .btn-black img {
-    max-width: inherit;
-  }
-
-  .scroll-link {
-    max-width: 180px;
-  }
-
-  .small,
-  small {
-    font-size: 12px;
-  }
-
-  p.bold,
-  span.bold {
-    font-size: 24px;
-  }
-
-  li.light,
-  p.light,
-  span.light,
-  .light .bold,
-  .btn-green,
-  .btn-green-lg,
-  .white-btn-sm,
-  .white-btn-black-border-sm,
-  .btn-black {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 60px;
-  }
-
-  h2 {
-    font-size: 48px;
-  }
-
-  form label {
-    font-size: 13px;
-  }
-
-  .form-control,
-  .form-select {
-    border-radius: 18px;
-    padding: 13.5px 10px;
-  }
-
-  .fake-input-file {
-    border-radius: 18px;
-    height: 53px;
-  }
-  */
-}
-
 @media screen and (max-width: 768px) {
   .container,
   .container-fluid {
@@ -528,13 +444,6 @@ form {
   margin-right: 25px;
   font-size: 14.4px;
   letter-spacing: 2px;
-}
-
-@media screen and (min-width: 1400px) {
-  /* .navbar-expand-lg .navbar-nav .nav-link {
-    font-size: 18px;
-  }
-  */
 }
 
 @media screen and (max-width: 1400px) {

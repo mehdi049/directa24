@@ -232,27 +232,6 @@
   max-width: 27.2px;
 }
 
-@media screen and (min-width: 1400px) {
-  /*
-  #careers-page #open-positions-section .job-position {
-    min-height: 80px;
-    padding: 15px 7px;
-  }
-
-  #careers-page #open-positions-section .job-title-abbr {
-    padding: 15px;
-    max-width: 59px;
-    max-height: 59px;
-    font-size: 21px;
-  }
-
-  #careers-page #open-positions-section .job-apply {
-    padding: 15px 36px;
-    font-size: 18px;
-  }
-  */
-}
-
 @media screen and (max-width: 1200px) {
   #careers-page #open-positions-section .job-apply {
     padding: 12px 30px;

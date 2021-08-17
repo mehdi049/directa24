@@ -418,15 +418,6 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 1400px) {
-  /*
-  #solutions-page #latest-news .latest-news-item .white img,
-  #solutions-page #latest-news .latest-news-item .text-right img {
-    max-width: inherit;
-  }
-  */
-}
-
 @media screen and (min-width: 1200px) {
   #solutions-page #latest-news .jcarousel-latest-news {
     max-width: 1095px;
