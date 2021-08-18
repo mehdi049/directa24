@@ -322,10 +322,18 @@
 }
 
 @media screen and (max-width: 576px) {
+  #solutions-page #our-product .container {
+    min-height: auto;
+  }
+
   #solutions-page #we-are-hiring {
     background-image: url("../images/solution-we-are-hiring-bg-m.png");
-    padding: 60px 0px;
-    margin-top: -50px;
+    margin-top: 0px;
+  }
+
+  #solutions-page #our-product {
+    background-size: 110px;
+    padding-bottom: 50px;
   }
 }
 
@@ -484,7 +492,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  padding: 100px 0px 120px;
+  padding: 50px 0px 120px;
   height: 100vh;
   box-sizing: border-box;
   position: relative;
