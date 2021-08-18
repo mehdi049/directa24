@@ -380,6 +380,21 @@
   margin: auto;
 }
 
+#solutions-page #latest-news .news-read-more-link,
+#solutions-page #latest-news .news-read-more-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#solutions-page #latest-news .news-read-more-link:hover {
+  text-decoration: underline;
+}
+
+#solutions-page #latest-news .news-read-more-link img {
+  max-width: 22.4px;
+  margin-right: 10px;
+}
+
 #solutions-page #latest-news .jcarousel-latest-news ul {
   position: relative;
   width: 10000px;

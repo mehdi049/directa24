@@ -1,4 +1,8 @@
 /** top section **/
+#news-page {
+  overflow-x: hidden;
+}
+
 #news-page #top-section {
   padding: 180px 0px 220px;
 }

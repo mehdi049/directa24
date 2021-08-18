@@ -541,6 +541,10 @@ form {
   text-decoration: none;
 }
 
+#footer .footer-link.d-inline {
+  margin-left: -12px;
+}
+
 #footer .small {
   color: #fff;
   text-decoration: none;
