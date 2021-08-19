@@ -22,6 +22,22 @@
   text-align: center;
 }
 
+#solutions-page #top-section img.scroll-link {
+  animation: mymove 1.5s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    width: 150px;
+  }
+  50% {
+    width: 170px;
+  }
+  100% {
+    width: 150px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   #solutions-page #top-section {
     padding-top: 200px;
