@@ -52,6 +52,12 @@
   }
 }
 
+@media screen and (max-width: 578px) {
+  #solutions-page {
+    overflow-x: hidden;
+  }
+}
+
 /** accept payment **/
 #solutions-page #accept-payment {
   background-image: url("../images/dots-bg.png");
