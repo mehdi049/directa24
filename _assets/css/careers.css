@@ -43,9 +43,30 @@
   padding: 110px 0px;
 }
 
+@media screen and (max-width: 1400px) {
+  #careers-page #join-us-section img {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #careers-page #join-us-section img {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #careers-page #join-us-section img {
+    max-width: 500px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #careers-page #join-us-section {
     padding: 30px 0px;
+  }
+  #careers-page #join-us-section img {
+    max-width: 480px;
   }
 }
 
